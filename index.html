@@ -1,110 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shagun Shukla - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Shagun Shukla – B.Tech Data Science student, tech enthusiast and sustainability leader." />
+  <title>Shagun Shukla | Portfolio</title>
+  <!-- Google Font for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons (LinkedIn, GitHub, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" />
+  <!-- Main CSS Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <header>
-        <h1>Shagun Shukla</h1>
-        <p>Computing & Data Science Enthusiast | Cryptography & AI Researcher</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#symposiums">Symposiums & Conferences</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Sticky Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Shagun</div>
+      <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#events">Conferences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a goal-oriented computing and data science student passionate about cryptography, artificial intelligence, and algorithm development.</p>
+  <main>
+    <!-- Home Section with 3D background and name/tagline -->
+    <section id="home" class="section home-section">
+      <!-- Three.js canvas for animated 3D background -->
+      <canvas id="bg-canvas"></canvas>
+      <div class="home-content">
+        <h1 class="name neon-text">Shagun Shukla</h1>
+        <h2 class="tagline">
+          <!-- Tagline text will be typed out with JS for typewriter effect -->
+          <span id="typed-tagline"></span><span class="cursor">|</span>
+        </h2>
+        <!-- Glowing scroll-down icon to prompt user to scroll -->
+        <a href="#about" class="scroll-down"><i class="fas fa-angle-down"></i></a>
+      </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Sai University (SaiU)</strong> - B.Tech in Computing & Data Science, Minor in Sustainability</p>
-        <p>Relevant Coursework: Machine Learning, Deep Learning, Reinforcement Learning, Theory of Computation, Data Structures, AI, Financial Modeling, Compiler Design.</p>
-        <p><strong>City Montessori School (CMS)</strong> - ICSE (CS, Math, Physics, Chemistry) | 12th Grade: 99.5%</p>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Hello! I'm Shagun Shukla, a third-year <strong>B.Tech student in Computing and Data Science</strong> at Sai University, Chennai (with a minor in Sustainability). I'm passionate about technology and its impact on society, with hands-on experience in <strong>machine learning</strong>, <strong>robotics</strong>, and <strong>UX design</strong>.</p>
+      <p>I've undertaken projects ranging from developing autonomous robots to building data-driven applications. Outside academics, I'm actively involved in leadership and sustainability initiatives, striving to drive positive change through innovation. I love tackling challenging problems and continuously learning new tools and technologies.</p>
+      <p><em>Based in Chennai, India.</em> Feel free to explore my work and connect with me!</p>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p><strong>IIT Bombay - Electronics Intern</strong></p>
-        <p>Worked on PCB design, robotics, and embedded systems.</p>
-        <p><strong>Chennai Mathematical Institute - Research Intern</strong></p>
-        <p>Developed Julia DataFrames for image processing.</p>
-        <p><strong>Teach For India - Tech & HR Intern</strong></p>
-        <p>Designed chatbot-based learning systems and streamlined recruitment.</p>
-        <p><strong>Ellys Academy & Kassoom - Part-time Tutor</strong></p>
-        <p>Provided tutoring in Mathematics and Computer Science.</p>
-        <p><strong>ILP Overseas - HR Intern</strong></p>
-        <p>Managed recruitment processes and training sessions.</p>
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <!-- Sai University Education Item -->
+      <div class="education-item">
+        <h3>Sai University (SaiU) – Paiyanur, Tamil Nadu <span class="edu-dates">2022 – 2026 (Expected)</span></h3>
+        <p><strong>B.Tech in Computing and Data Science</strong>, Minor in Sustainability. <strong>GPA:</strong> 9.86/10</p>
+        <div class="coursework">
+          <h4>Relevant Coursework:</h4>
+          <ul>
+            <li>Probability and Statistics with R</li><li>Advanced Programming</li>
+            <li>Machine Learning</li><li>Deep Learning</li>
+            <li>Reinforcement Learning</li><li>Artificial Intelligence</li>
+            <li>Algebra & Discrete Math</li><li>Theory of Computation</li>
+            <li>Database Management Systems</li><li>Data Structures and Algorithms</li>
+            <li>Digital Signal Processing (1D & 2D)</li><li>Financial Modelling with Python</li>
+            <li>Environmental Law</li><li>Computer Networks</li>
+            <li>Compiler Design</li><li>Linear Algebra</li>
+          </ul>
+        </div>
+      </div>
+      <!-- High School Education Item -->
+      <div class="education-item">
+        <h3>City Montessori School (CMS) – Lucknow, Uttar Pradesh <span class="edu-dates">2019 – 2021</span></h3>
+        <p><strong>ICSE (Class 10 & 12)</strong> – Physics, Chemistry, Math, Computer Science.</p>
+        <p><strong>Scores:</strong> Class 10: 95.6%, Class 12: 99.5%. <strong>JEE Mains 2022:</strong> 96<sup>th</sup> percentile.</p>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Academic Projects</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <!-- Skills categorized with neon progress bars -->
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Programming Languages</h4>
+          <div class="progress-bar" data-percent="90">
+            <span class="skill-label">Python, Java, C/C++, JavaScript, SQL, R, MATLAB, Swift, Ruby, PHP</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Web Development</h4>
+          <div class="progress-bar" data-percent="85">
+            <span class="skill-label">HTML/CSS, React.js, AngularJS, Vue.js, Node.js, Express.js, Django, Flask</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Data Analysis & Visualization</h4>
+          <div class="progress-bar" data-percent="90">
+            <span class="skill-label">Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Tableau, Power BI</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Machine Learning & AI</h4>
+          <div class="progress-bar" data-percent="85">
+            <span class="skill-label">TensorFlow, Keras, PyTorch, Scikit-learn, OpenCV, NLTK, spaCy</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Cloud Platforms</h4>
+          <div class="progress-bar" data-percent="70">
+            <span class="skill-label">AWS, Microsoft Azure, Google Cloud Platform</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Development Tools & IDEs</h4>
+          <div class="progress-bar" data-percent="80">
+            <span class="skill-label">VS Code, PyCharm, IntelliJ IDEA, Eclipse, Sublime Text</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Other</h4>
+          <div class="progress-bar" data-percent="75">
+            <span class="skill-label">LaTeX, GLPK, Linux, ROS1, Windows, Figma, Adobe XD, CoppeliaSim, Logo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <!-- Teach For India HR Intern -->
+      <div class="exp-item">
+        <h3>Teach For India – <span class="role">Fellowship Recruitment Intern (HR)</span> <span class="exp-dates">Jan 2024 – Present</span></h3>
         <ul>
-            <li>Deep Learning Project - Felis Image Classification (CNN models, 83% accuracy)</li>
-            <li>Machine Learning Classification - National Poll on Healthy Aging</li>
-            <li>Campus Sustainability Report - Campus Roots Project</li>
-            <li>Image Compression - Hadamard Transform for DSP</li>
-            <li>Lunar Scout Development - Robotics & Embedded Systems</li>
-            <li>UX/UI Design - Developed user-centered web interfaces</li>
-            <li>Paramapadam - Snakes and Ladders Game with Robots</li>
+          <li>Streamlining fellowship recruitment processes using Salesforce for candidate data and metrics tracking.</li>
+          <li>Screening resumes, scheduling interviews, and executing outreach via social media and campus networks to boost engagement.</li>
         </ul>
-    </section>
-
-    <section id="leadership">
-        <h2>Leadership Roles</h2>
+      </div>
+      <!-- Ellys Academy Tutor -->
+      <div class="exp-item">
+        <h3>Ellys Academy – <span class="role">Part-time Tutor</span> <span class="exp-dates">Oct 2023 – Present</span></h3>
         <ul>
-            <li>Microsoft Learn Student Ambassador - Workshops & mentorship</li>
-            <li>Vice President - Computer Science Society (Turingites), SaiU</li>
-            <li>President - Pugwash Chapter of ISYP, SaiU</li>
-            <li>DexSchool Candidate (Class of 2025) - Leadership & Innovation</li>
-            <li>UPG Sustainability Leader (Class of 2025) - Sustainability Initiatives</li>
-            <li>One Million Leaders Asia Fellow (Class of 2025) - Global Problem-Solving</li>
-            <li>Head Boy - Student Council, City Montessori School</li>
+          <li>Tutoring Mathematics and Computer Science to students across US, UK, Cambridge, and Canadian curricula.</li>
+          <li>Tailoring lessons to individual learning styles, ensuring clear understanding of key concepts.</li>
         </ul>
-    </section>
-
-    <section id="symposiums">
-        <h2>Symposiums & Conferences</h2>
+      </div>
+      <!-- Kassoom Tutor -->
+      <div class="exp-item">
+        <h3>Kassoom – <span class="role">Part-time Tutor</span> <span class="exp-dates">Nov 2023 – Present</span></h3>
         <ul>
-            <li>Research Symposium on Computer Science (RISC 2025) - IIT Bombay</li>
-            <li>17th & 19th International Conferences of Chief Justices of the World - CMS</li>
-            <li>China Study Forum National Conference - Global Tech Competition</li>
+          <li>Providing Mathematics and Computer Science tutoring for students in the UK curriculum (GCSE and A-Level).</li>
+          <li>Customizing lesson plans to address individual needs and promote thorough subject comprehension.</li>
         </ul>
+      </div>
+      <!-- Teach For India Tech Intern -->
+      <div class="exp-item">
+        <h3>Teach For India – <span class="role">Technology Intern</span> <span class="exp-dates">Jul 2024 – Sep 2024</span></h3>
+        <ul>
+          <li>Developed an online learning chatbot on WhatsApp to provide accessible educational content for underprivileged children.</li>
+          <li>Integrated platforms like Engati and Dialogue360 to enhance user engagement and streamline content delivery.</li>
+        </ul>
+      </div>
+      <!-- IIT Bombay LifeSpark Intern -->
+      <div class="exp-item">
+        <h3>IIT Bombay (LifeSpark Technologies) – <span class="role">Electronics Intern</span> <span class="exp-dates">Jun 2024 – Aug 2024</span></h3>
+        <ul>
+          <li>Designed and tested PCBs from scratch (using oscilloscopes for diagnostics) and prototyped a sound player on Arduino Nano and an ESP32 PICO MINI 02 board.</li>
+          <li>Developed a robotic arm with forward and inverse kinematics for automated handling of magnetized 3D printer plates.</li>
+        </ul>
+      </div>
+      <!-- Chennai Mathematical Institute Research Intern -->
+      <div class="exp-item">
+        <h3>Chennai Mathematical Institute – <span class="role">Research Intern</span> <span class="exp-dates">Jun 2023 – Aug 2023</span></h3>
+        <ul>
+          <li>Developed DataFrames in Julia for image processing under Prof. Sourish Das, improving data handling and analysis efficiency.</li>
+          <li>Delivered workshops on Julia programming and DataFrames, and honed computational thinking via MIT's course, demonstrating adaptability in learning new technologies.</li>
+        </ul>
+      </div>
+      <!-- ILP Overseas HR Intern -->
+      <div class="exp-item">
+        <h3>ILP Overseas – <span class="role">HR Intern</span> <span class="exp-dates">Jun 2022 – Sep 2023</span></h3>
+        <ul>
+          <li>Managed recruitment by creating job postings, conducting unbiased resume screenings, and performing preliminary interviews.</li>
+          <li>Maintained a candidate database and collaborated in training sessions, demonstrating strong teamwork and organizational skills.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p><strong>Programming Languages:</strong> Python, Java, C/C++, JavaScript, Swift, SQL, MATLAB, R</p>
-        <p><strong>Web Development:</strong> HTML/CSS, JavaScript frameworks (React.js, Vue.js, Node.js, Django)</p>
-        <p><strong>Machine Learning & AI:</strong> TensorFlow, Keras, PyTorch, Scikit-learn, OpenCV</p>
-        <p><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Matplotlib, Tableau</p>
-        <p><strong>Development Tools:</strong> ROS, CoppeliaSim, Linux, Visual Studio Code, IntelliJ</p>
+    <!-- Achievements Section (Leadership, Fellowships, Awards) -->
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ul class="achievements-list">
+        <li><strong>Microsoft Learn Student Ambassador (2023 – Present):</strong> Advocated Microsoft technologies by organizing workshops/webinars and fostering a collaborative learning environment among students.</li>
+        <li><strong>Vice President, Computer Science Society (Turingites), SaiU (Jul 2023 – Present):</strong> Bridged academia and industry via networking events with tech leaders, established mentorship partnerships, and led peer tutoring sessions to strengthen the community.</li>
+        <li><strong>President, Pugwash Chapter of ISYP, SaiU (Mar 2023 – Present):</strong> Organized dialogues and events on global challenges, promoting interdisciplinary collaboration and open dialogue with distinguished speakers.</li>
+        <li><strong>DexSchool Candidate (Class of 2025):</strong> Selected for an intensive leadership and innovation program nurturing changemakers and impact-driven youth leaders.</li>
+        <li><strong>UPG Sustainability Leader (Class of 2025):</strong> Chosen by United People Global to lead sustainability initiatives and grassroots projects aligned with the UN Sustainable Development Goals.</li>
+        <li><strong>One Million Leaders Asia Fellow (Class of 2025):</strong> Joined a network of young Asian leaders committed to solving global challenges and advancing SDGs through collaborative action.</li>
+        <li><strong>UPG Biashara Entrepreneur 2024:</strong> Supported local enterprise growth through the UPG Biashara program, driving community-level socio-economic impact (Mar 2023 – Present).</li>
+        <li><strong>Millennium Fellow 2023 (Emerging Technologist):</strong> Led the "Revive: Practicing Net-Zero Waste" project on sustainable waste management in educational institutions (Aug – Dec 2023), including field visits and collaborations with NGOs for experiential learning.</li>
+        <li><strong>Head Boy, Student Council, CMS Lucknow (2020 – 2021):</strong> Spearheaded student initiatives to improve campus culture and governance, recognized by faculty and peers for outstanding leadership.</li>
+      </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:shagunshukla4812@gmail.com">shagunshukla4812@gmail.com</a></p>
-        <p>Location: Chennai, India</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: Lunar Scout -->
+        <div class="project-card">
+          <h3>Lunar Scout Development (eYRC 2023–24)</h3>
+          <p>Led the development of an omni-wheel self-balancing robotic vehicle for lunar colony patrolling. Implemented self-balancing control (PID, LQR) and auto-steering, and tested the system in simulation (CoppeliaSim) to ensure robust navigation. Overcame hardware-software integration challenges to navigate obstacle courses and signal hazards.</p>
+          <p><strong>Technologies:</strong> Python, Octave, Embedded C</p>
+        </div>
+        <!-- Project 2: UX/UI Design Initiative -->
+        <div class="project-card">
+          <h3>UX/UI Design Initiative</h3>
+          <p>Championed a user-centric design process using methods like Empathize, Define, and Ideate. Conducted UX research and testing, created wireframes and prototypes in Figma, and iterated to high-fidelity designs. Also organized workshops to mentor peers in UX design principles and best practices for social good projects.</p>
+          <p><strong>Technologies/Tools:</strong> Figma, Adobe XD, User Research Methods</p>
+        </div>
+        <!-- Project 3: Paramapadam Robotics Game -->
+        <div class="project-card">
+          <h3>Paramapadam – Snakes & Ladders Robots</h3>
+          <p>Built a real-life Snakes and Ladders game ("Paramapadam") using autonomous robots under the guidance of faculty. Programmed ATmega2560-based robots in embedded C (Microchip Studio) to follow lines on a board and act as game pieces, using sensor data for precise movement and demonstrating effective microcontroller interfacing.</p>
+          <p><strong>Technologies:</strong> Embedded C, Microcontrollers (ATmega2560), Robotics</p>
+        </div>
+        <!-- Project 4: Felis Image Classification -->
+        <div class="project-card">
+          <h3>Felis Species Image Classification</h3>
+          <p>Developed a deep learning classifier for Felis (cat family) images using transfer learning. Fine-tuned three CNN models (InceptionV3, DenseNet121, EfficientNetV2B0) to identify species, achieving up to 83% accuracy with DenseNet. Evaluated model performance with precision, recall, F1-score, and confusion matrices to ensure reliability.</p>
+          <p><strong>Technologies:</strong> TensorFlow, Keras, Scikit-learn</p>
+        </div>
+        <!-- Project 5: Healthy Aging Survey ML Analysis -->
+        <div class="project-card">
+          <h3>Healthy Aging Survey – ML Analysis</h3>
+          <p>Applied machine learning to predict seniors' annual doctor visits using the National Poll on Healthy Aging dataset. Experimented with multiple classifiers (Logistic Regression, SVM, Decision Trees, Random Forest, AdaBoost, Gradient Boosting), using PCA for dimensionality reduction and hyperparameter tuning. Identified Random Forest as the best model (~53% accuracy) for this prediction task.</p>
+          <p><strong>Technologies:</strong> Python (Scikit-learn, Pandas, NumPy), Matplotlib</p>
+        </div>
+        <!-- Project 6: Campus Sustainability Analysis -->
+        <div class="project-card">
+          <h3>Campus Roots Sustainability Study</h3>
+          <p>Executed an Environmental Science project assessing campus sustainability. Analyzed current practices in energy usage and waste management, identified improvement areas, and proposed initiatives such as energy-efficient systems, solar panel installations, expanded green spaces, and enhanced waste reduction programs.</p>
+          <p><strong>Domain:</strong> Environmental Science Research & Analysis</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 Shagun Shukla | Portfolio</p>
-    </footer>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><i class="fab fa-google"></i> <strong>Google UX Design Specialization</strong> – Completed July 2023</li>
+        <li><i class="fab fa-google"></i> <strong>Google Cybersecurity Certification</strong> – Completed September 2023</li>
+        <li><i class="fas fa-award"></i> <strong>Microsoft Learn AI Skills Challenge</strong> – Participant (Jul–Aug 2023)</li>
+        <li><i class="fas fa-university"></i> <strong>Julia Scientific Programming</strong> – University of Cape Town (Feb 2023)</li>
+      </ul>
+    </section>
 
+    <!-- Conferences & Events Section -->
+    <section id="events" class="section">
+      <h2>Conferences & Events</h2>
+      <ul class="events-list">
+        <li><strong>Research Symposium on Computer Science (RISC 2025, IIT Bombay):</strong> Attended in March 2025, engaging with cutting-edge research talks across AI/ML, Computer Systems, and Theoretical CS. Participated in interactive poster sessions and gained insights into the latest advancements and research culture.</li>
+        <li><strong>International Conference of Chief Justices of the World:</strong> Participated in the 17th and 19th ICCJW (City Montessori School, Lucknow) and interacted with Chief Justices from around the globe, discussing the need for effective global governance and international cooperation.</li>
+        <li><strong>China Study Forum – National Conference:</strong> Immersed in a two-day conference by CSF, with panel discussions on the media landscape and high-tech competition between the US and China. Learned from distinguished experts about key global dynamics and geopolitical trends (2024).</li>
+        <li><strong>Workshop on Computational Epigraphy (IMSc, Chennai):</strong> Attended an interdisciplinary workshop in Aug 2024 on decoding undeciphered scripts. Learned about ancient writing systems and algorithmic decipherment methods, applied machine learning for pattern recognition in inscriptions, and collaborated with experts in digital humanities.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch or learn more, feel free to reach out through the form below or connect with me on LinkedIn/GitHub!</p>
+      <!-- Social media icons -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/shagun-shukla-6747b9219" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Shagun-4812" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <!-- Contact Form -->
+      <form id="contact-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+      <!-- Download CV link -->
+      <p class="download-cv"><a href="Shagun_Shukla_CV.pdf" download>Download My CV (PDF)</a></p>
+    </section>
+  </main>
+
+  <!-- Include GSAP (for animations) and Three.js (for 3D background) from CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/three@0.174.0/build/three.min.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
